@@ -1,5 +1,6 @@
 'use client';
 import ContactSection from "../Contact/page";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -42,10 +43,12 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p1.png"
                     alt="Isablow Logo"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Isablow</h4>
@@ -61,10 +64,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p2.png"
                     alt="Smart Enterprises Logo"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Smart Enterprises</h4>
@@ -80,10 +85,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p3.png"
                     alt="Logo Project 3"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -99,10 +106,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p4.png"
                     alt="Logo Project 4"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -130,10 +139,12 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p9.png"
                     alt="Business Card 1"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className=" object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -149,10 +160,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p10.png"
                     alt="Business Card 2"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -168,10 +181,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p11.png"
                     alt="Business Card 3"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className=" object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -187,10 +202,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p12.png"
                     alt="Business Card 4"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -218,10 +235,12 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p13.png"
                     alt="UI/UX Project 1"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -236,11 +255,14 @@ export default function Projects() {
                 </div>
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
-                <div className="overflow-hidden rounded-lg mb-4"><img
-                  src="/project/p16.png"
-                  alt="UI/UX Project 2"
-                  className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
-                />
+                <div className="overflow-hidden rounded-lg mb-4">
+                  <Image
+                    src="/project/p16.png"
+                    alt="UI/UX Project 2"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
                 <p className="text-gray-400 text-sm mb-4">Line Line Line Line Line Line Line Line</p>
@@ -255,10 +277,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p15.png"
                     alt="UI/UX Project 3"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -274,10 +298,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p14.png"
                     alt="UI/UX Project 4"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className=" object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -305,10 +331,12 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p7.png"
                     alt="Poster 1"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -324,10 +352,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p8.png"
                     alt="Banner 1"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -343,10 +373,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p6.png"
                     alt="Poster 2"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>
@@ -362,10 +394,12 @@ export default function Projects() {
               </div>
               <div className="bg-[#152232] p-6 rounded-xl shadow-md group">
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/project/p5.png"
                     alt="Banner 2"
-                    className="w-585 h-542 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    width={585}
+                    height={542}
+                    className="object-contain transform transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <h4 className="text-xl font-bold mb-2">Name</h4>

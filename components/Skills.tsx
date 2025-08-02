@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image"; 
 
 export default function SoftwareSkills() {
   const skills = [
@@ -58,7 +59,13 @@ export default function SoftwareSkills() {
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="bg-[#121f27] p-4 rounded-xl shadow-md w-[90px] h-[90px] flex items-center justify-center">
-              <img src={skill.icon} alt={skill.name} className="w-14 h-14" />
+              <Image
+                src={skill.icon}
+                alt={skill.name}
+                width={56}
+                height={56}
+                className="w-14 h-14 object-contain"
+              />
             </div>
 
             <p className="mt-3 text-sm text-gray-300">{skill.name}</p>

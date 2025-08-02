@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { useRouter } from "next/navigation";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image"; 
 
 export default function MainProject() {
   const router = useRouter();
@@ -33,14 +34,17 @@ export default function MainProject() {
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.15 }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} // ✅ Faster zoom on hover
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
             className="w-[244px] h-[298px] relative rounded-xl overflow-hidden shadow-lg border-2 border-transparent hover:border-cyan-400"
           >
-            <div className="w-full h-full overflow-hidden">
-              <img
+            <div className="w-full h-full relative">
+              <Image
                 src={item.src}
                 alt={item.title}
-                className="w-full h-full object-cover"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+                priority={index === 0} // first image loads faster
               />
             </div>
 

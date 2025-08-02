@@ -46,7 +46,7 @@ export default function Services() {
         <div className="space-y-4">
           {customRows.map((count, rowIdx) => (
             <div key={rowIdx} className="flex justify-center flex-wrap gap-4">
-              {Array.from({ length: count }).map((_, i) => {
+              {Array.from({ length: count }).map(() => {
                 const service = services[index];
                 index++;
 
@@ -56,7 +56,7 @@ export default function Services() {
                     className="bg-[#1e2a33] text-white px-4 py-2 text-sm md:text-base border border-gray-600
                       transition-all duration-300 ease-in-out
                       hover:bg-[#a0f0f8] hover:text-black hover:border-[#a0f0f8]
-                      hover:shadow-md hover:shadow-cyan-200/50"
+                      hover:shadow-md hover:shadow-cyan-200/50 rounded-lg"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ delay: index * 0.02, duration: 0.3 }}

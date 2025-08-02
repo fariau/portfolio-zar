@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function ContactSection() {
   return (
@@ -22,7 +23,10 @@ export default function ContactSection() {
                 { src: "/pinterest.png", name: "Pinterest" },
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-200">
-                  <img src={item.src} alt={item.name} className="w-5 h-5" />
+                  <Image
+                   src={item.src} 
+                   alt={item.name} 
+                   className="w-5 h-5" />
                   <span>{item.name}</span>
                 </li>
               ))}
@@ -41,7 +45,10 @@ export default function ContactSection() {
                 { src: "/linkedin.png", name: "Linkedin" },
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-200">
-                  <img src={item.src} alt={item.name} className="w-5 h-5" />
+                  <Image
+                   src={item.src} 
+                   alt={item.name} 
+                   className="w-5 h-5" />
                   <span>{item.name}</span>
                 </li>
               ))}
@@ -53,11 +60,17 @@ export default function ContactSection() {
             <h3 className="text-lg font-semibold mb-4">Contacts</h3>
             <div className="space-y-4 text-gray-200">
               <div className="flex items-center gap-3">
-                <img src="/whatsapp.png" alt="Whatsapp" className="w-5 h-5" />
+                <Image
+                 src="/whatsapp.png" 
+                 alt="Whatsapp" 
+                 className="w-5 h-5" />
                 <span>+92 312 2932827</span>
               </div>
               <div className="flex items-center gap-3">
-                <img src="/email.png" alt="Email" className="w-5 h-5" />
+                <Image
+                 src="/email.png" 
+                 alt="Email" 
+                 className="w-5 h-5" />
                 <span>hello@zarghamkhan.com</span>
               </div>
             </div>
