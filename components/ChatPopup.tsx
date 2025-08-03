@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { MdClose } from "react-icons/md";
 
 export default function ChatPopup({
@@ -12,7 +12,7 @@ export default function ChatPopup({
   size: "small" | "full";
 }) {
   const isSmall = size === "small";
-  const [isTyping] = useState(true); // Always true to keep showing
+  const [isTyping] = useState(true);
 
   return (
     <div

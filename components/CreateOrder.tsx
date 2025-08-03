@@ -6,12 +6,17 @@ export default function CreateOrder() {
   const router = useRouter();
 
   useEffect(() => {
+    const handleClose = () => {
+      router.push("/");
+    };
+
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") handleClose();
     };
+
     window.addEventListener("keydown", handleEsc);
     return () => window.removeEventListener("keydown", handleEsc);
-  }, []);
+  }, [router]);
 
   const handleClose = () => {
     router.push("/");
