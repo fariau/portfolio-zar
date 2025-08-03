@@ -28,7 +28,7 @@ const Header = () => {
               <Link href="/Projects" className="block text-white hover:text-cyan-400">Projects</Link>
               <Link href="#client-review" className="block text-white hover:text-cyan-400">Client Reviews</Link>
               <Link href="#contact" className="block text-white hover:text-cyan-400">Contact</Link>
-              <a href="/Resume.png" className="block text-white hover:text-cyan-400">Download CV</a>
+              <Link href="/DownloadCV" className="block text-white hover:text-cyan-400">Download CV</Link>
               <Link href="#" className="block text-white hover:text-cyan-400">Talk to Me</Link>
               <a href="/CreateOrderPage" className="block text-white hover:text-cyan-400">Create Order</a>
               <Link href="/HireMe" className="block text-white hover:text-cyan-400">Hire Me</Link>

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Globe } from "lucide-react"; // Optional icon library
+import { Globe } from "lucide-react"; 
 
 export default function LocaleSelector() {
   const [open, setOpen] = useState(false);

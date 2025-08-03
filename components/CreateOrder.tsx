@@ -1,21 +1,38 @@
 "use client";
 import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-export default function CreateOrder({ onClose }: { onClose: () => void }) {
+export default function CreateOrder() {
+  const router = useRouter();
+
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") handleClose();
     };
     window.addEventListener("keydown", handleEsc);
     return () => window.removeEventListener("keydown", handleEsc);
-  }, [onClose]);
+  }, []);
+
+  const handleClose = () => {
+    router.push("/");
+  };
 
   return (
     <section>
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
         <div className="relative w-full max-w-4xl rounded-2xl border border-cyan-500 bg-gradient-to-b from-[#0e1b27] to-[#081018] p-8 shadow-[0_0_40px_#06d6a0]/30 backdrop-blur-lg">
+          {/* Close Button */}
+          <button
+            onClick={handleClose}
+            className="absolute top-4 right-4 text-gray-300 hover:text-white text-2xl font-bold focus:outline-none"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+
           <h2 className="text-center text-3xl font-bold text-gray-200">Create Order</h2>
           <hr className="my-6 border-t border-cyan-700 opacity-40" />
+
           <form className="grid grid-cols-1 md:grid-cols-2 gap-6 text-white">
             <div>
               <select className="w-full bg-[#1a2733] border border-gray-600 rounded px-4 py-3 text-sm text-white focus:outline-none">
@@ -56,6 +73,7 @@ export default function CreateOrder({ onClose }: { onClose: () => void }) {
               />
             </div>
           </form>
+
           <div className="flex justify-end mt-8">
             <button className="w-40 border-2 bg-cyan-400 border-cyan-400 rounded-full py-2 text-white hover:bg-cyan-500 hover:text-black transition font-medium text-sm">
               Place Order

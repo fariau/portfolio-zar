@@ -1,15 +1,14 @@
-// components/FloatingChat.tsx
 "use client";
 import { useState } from "react";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import ChatPopup from "./ChatPopup";
 
-export default function FloatingChat() {
-  const [isSmallOpen, setIsSmallOpen] = useState(false);
+export default function FloatingChat({ autoOpen = false }: { autoOpen?: boolean }) {
+  const [isSmallOpen, setIsSmallOpen] = useState(autoOpen);
   const [isFullOpen, setIsFullOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div id="chat" className="fixed bottom-6 right-6 z-50">
       {!isSmallOpen && (
         <button
           onClick={() => setIsSmallOpen(true)}

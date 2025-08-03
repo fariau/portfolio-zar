@@ -9,7 +9,7 @@ export default function Stats() {
         className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6 max-w-6xl w-full"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.3 }} // faster
+        transition={{ duration: 0.3 }} 
       >
         {/* Experience (row-span-2) */}
         <motion.div

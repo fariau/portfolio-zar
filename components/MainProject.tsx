@@ -44,7 +44,7 @@ export default function MainProject() {
                 layout="fill"
                 objectFit="cover"
                 className="rounded-xl"
-                priority={index === 0} // first image loads faster
+                priority={index === 0}
               />
             </div>
 

@@ -24,11 +24,11 @@ export default function ContactSection() {
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-200">
                   <Image
-                   src={item.src} 
-                   alt={item.name} 
-                   width={5}
-                   height={5}
-                    />
+                    src={item.src}
+                    alt={item.name}
+                    width={24}
+                    height={24}
+                  />
                   <span>{item.name}</span>
                 </li>
               ))}
@@ -48,10 +48,11 @@ export default function ContactSection() {
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-200">
                   <Image
-                   src={item.src} 
-                   alt={item.name} 
-                   width={5}
-                   height={5}/>
+                    src={item.src}
+                    alt={item.name}
+                    width={24}
+                    height={24}
+                  />
                   <span>{item.name}</span>
                 </li>
               ))}
@@ -64,18 +65,20 @@ export default function ContactSection() {
             <div className="space-y-4 text-gray-200">
               <div className="flex items-center gap-3">
                 <Image
-                 src="/whatsapp.png" 
-                 alt="Whatsapp" 
-                 width={5}
-                   height={5}/>
+                  src="/whatsapp.png"
+                  alt="Whatsapp"
+                  width={24}
+                  height={24}
+                />
                 <span>+92 312 2932827</span>
               </div>
               <div className="flex items-center gap-3">
                 <Image
-                 src="/email.png" 
-                 alt="Email" 
-                 width={5}
-                   height={5}/>
+                  src="/email.png"
+                  alt="Email"
+                  width={24}
+                  height={24}
+                />
                 <span>hello@zarghamkhan.com</span>
               </div>
             </div>

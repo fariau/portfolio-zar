@@ -1,11 +1,10 @@
-'use client';
-import { useState } from 'react';
-import CreateOrder from '@/components/CreateOrder'; 
+"use client";
+import CreateOrder from "@/components/CreateOrder";
 
 export default function CreateOrderPage() {
-  const [isOpen, setIsOpen] = useState(true);
-
-  if (!isOpen) return null;
-
-  return <CreateOrder onClose={() => setIsOpen(false)} />;
+  return (
+    <div className="min-h-screen bg-[#0F1B29] backdrop-blur-sm">
+      <CreateOrder />
+    </div>
+  );
 }
